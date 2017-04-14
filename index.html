@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Memória Cache</title>
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+
+	<div id="conteiner">
+		<h1> Hit e Miss</h1>
+
+		<form id="formMemCache">
+			
+		<label>Insira o arquivo trace: </label> 
+		<input id="fileToLoad" class="file" type="file" name="fileToLoad" placeholder="Arquivo"><br/><br/>
+
+		<label>Informe a quantidade de linhas que sua cache terá, ela precisa ser potência de 2 e ter no máximo 1024 linhas: </label>
+		<input type="number" id="qtdL" name="qtdL" maxlength="4" step="2"  min="2" max="1024"><br/><br/>
+
+		<label>Informe a quantidade de palavras que deseja armazenar, ela precisa ser potência de 2 e ter no máximo 16: </label>
+		<input type="number" id="qtdP" name="qtdP" maxlength="2" step="2" min="2" max="16"><br/><br/>
+
+		<button type="button" id="button" onclick="loadFileAsText()">Verificar</button><br/><br/>
+
+		<label>Dados obtidos: </label> <br/>
+		<p id="ex"></p>
+		<textarea id="resp" readonly></textarea>
+
+		</form>
+	</div>
+<!--	<table>
+		<tr>
+			<td>
+				<label><b>insira o trace: </b> </label>
+				<input type="file" id="fileToLoad">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label><b>Informe o tamanho da memória cache: </b></label>
+				<input type="text" name="qtd" id="qtdC">
+			</td>
+			<td><button onclick="loadFileAsText()">Verificar</button><td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Insira valor entre 2 e 1024 </b>
+			</td>
+		</tr>
+	</table>
+
+	<p id="lista"></p>
+  -->
+	</body>
+</html>
